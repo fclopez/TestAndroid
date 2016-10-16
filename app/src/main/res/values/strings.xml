@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Contador</string>
+    <string name="app_name">Contador + RestAPI</string>
     <string name="title_activity_lista">ListaActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
