@@ -56,11 +56,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
     public void setTxtEstadoSocket(String txt){this.txtEstadoSocket.setText(txt);}
 
+
     @Override
     public void onDestroy(){
-
+        app.onDestroy();
+        super.onDestroy();
     }
-    
+
     @Override
     public void onClick(View v) {
         switch (v.getId()){

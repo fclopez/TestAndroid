@@ -3,7 +3,9 @@ package com.example.contador;
 import org.json.JSONObject;
 
 import java.net.URISyntaxException;
-import io.socket.engineio.client.Socket;
+
+import io.socket.client.IO;
+import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
 /**
@@ -18,7 +20,7 @@ public class ConexionWs {
     public ConexionWs(MainActivity pr) {
         try {
             this.principal = pr;
-            this.ws = new Socket("http://172.30.60.86:8000");
+            this.ws = IO.socket("http://172.30.60.86:8000");
             this.ws.on("status", estado());
             this.ws.open();
         } catch (URISyntaxException e) {
@@ -26,6 +28,9 @@ public class ConexionWs {
         }
     }
 
+    public void onDestroy(){
+        ws.close();
+    }
 
     /*Eventos Emmit*/
     public void enviarMensaje(String evento, String msg){
