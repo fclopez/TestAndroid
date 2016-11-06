@@ -18,7 +18,7 @@ import java.net.URL;
  * Created by Camilo on 15/10/2016.
  */
 
-public class RegistroSensor extends AsyncTask<String, String, String> {
+public class TareaRegistro extends AsyncTask<String, String, String> {
 
     /*definicion de los elementos para la conexion*/
     HttpURLConnection conexion;
@@ -27,7 +27,7 @@ public class RegistroSensor extends AsyncTask<String, String, String> {
     MainActivity menup;
 
     /*Este contructor permite la interacción con la clase principal*/
-    public RegistroSensor(MainActivity princ){
+    public TareaRegistro(MainActivity princ){
         this.menup = princ;
     };
 
