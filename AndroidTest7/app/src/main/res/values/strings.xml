@@ -2,5 +2,5 @@
     <string name="app_name">AndroidTest7</string>
     <string name="edit_message">Escribe algo</string>
     <string name="button_send">Enviar</string>
-    <string name="hello_world">Hola</string>
+    <string name="hello_world">Hola - Mensaje Embebido en RunTime</string>
 </resources>

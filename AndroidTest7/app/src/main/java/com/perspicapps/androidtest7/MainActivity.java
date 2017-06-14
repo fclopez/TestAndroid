@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*Embebió un textview con un mensaje preestablecido en la UI Principal*/
         TextView textView = new TextView(this);
         textView.setText(R.string.hello_world);
 
